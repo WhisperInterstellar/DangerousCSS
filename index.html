@@ -7,44 +7,65 @@
 <style> 
       /* Global Styles */
  html {
-	 background: lightgray;
+	 background: #526b33
  }
 div {
-	boder: 3px solid green;
+	border: 2px solid #b5845b;
 }
  a {
-   border: 2px solid purple;
-   color: blue;
+   border: 4px solid #5b74b5;
+   color: rgba(30, 0, 40, .2);
+ }
+ h2 {
+	 font-size: 30px;
  }
       /* Individual Styles */
          /* Bio Styles */
- .BioBox {
-	 border: 1px solid black;
+ .BioWrapper {
+	 width: 70%;
+	 font-size:24px;
  }
+ .BioBox {
+	 width: 50%;
+	 padding: 10px;
+	 border: 10px solid purple;
+	 margin: 10%;
+	 font-size: 1em;
+ }
+ .BioCopy {
+	 font-size:1em;
  .BioCopy a {
-	 color: green;
+	 color: #314702;
+	 font-size: 1.2em;
  }
          /* Social Styles */
  .SocialLink {
-	 color: blue;
+	 /* color: #5b74b5; */
+	 color: orange;
+	 background: rgba(70, 120, 250, 0.5);
  }
 </style>
   </head>
   <body>
 	  <!-- Personal memo:  Make it a git repo before making it a github repo -->
+
+	  <!-- <p class="SocialLink">What keeps superseding this class??</p> -->
    <h1 class="SocialLink">I'm an h1</h1>
     <ul>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a href="https://example.com/" class="SocialLink">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a href="https://example.com/" class="SocialLink">Link</a>
       </li>
       <li>
-        <a href="https://example.com/">Link</a>
+        <a href="https://example.com/" class="SocialLink">Link</a>
       </li>
     </ul>
     <h2>I'm an h2</h2>
+
+    <div class="BioWrapper">
+
     <div class="BioBox">
       <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl" class="SocialLink">here</a>
@@ -89,9 +110,13 @@ div {
     </div>
     <div class="BioBox">
       <h3>??</h3>
-      <p>
+      <p class="SocialLink">
         The Future
-      </p>   
+      </p>
+     </div>
     </div>
+
+   </div>
+
   </body>
 </html>
