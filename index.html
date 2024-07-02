@@ -9,48 +9,68 @@
  html {
 	 background: #526b33
  }
-div {
+ html, body {
+	 margin: 0;
+	 padding: 0;
+ }
+ /* body {
+	 font-size: 62.5%
+ } */
+ div {
 	border: 2px solid #b5845b;
-}
+ }
  a {
    border: 4px solid #5b74b5;
    color: rgba(30, 0, 40, .2);
+ }
+ h1 {
+	 font-size: 2em;
+	 margin-top: 0;
  }
  h2 {
 	 font-size: 30px;
  }
       /* Individual Styles */
+         /* Hero Styles */
+ .FullHero {
+	 background-color: #c7dbfc;
+	 height: 20vw;
+	 width; 20vw;
+ }
          /* Bio Styles */
  .BioWrapper {
-	 width: 70%;
-	 font-size:24px;
+	 /* width: 60%; */
+	 /* font-size: 24px; */
  }
  .BioBox {
 	 width: 50%;
-	 padding: 10px;
+	 padding: 20px;
 	 border: 10px solid purple;
 	 margin: 10%;
+	 font-size: 1rem;
+ }
+ .BioBox h3 {
+	 font-size: 1.5em;
+ }		 
+ .BioCopy {
 	 font-size: 1em;
  }
- .BioCopy {
-	 font-size:1em;
  .BioCopy a {
 	 color: #314702;
 	 font-size: 1.2em;
  }
          /* Social Styles */
  .SocialLink {
-	 /* color: #5b74b5; */
-	 color: orange;
-	 background: rgba(70, 120, 250, 0.5);
+	 color: #5b74b5;
+	 background: rgba(150, 150, 150, 0.5);
  }
 </style>
   </head>
   <body>
 	  <!-- Personal memo:  Make it a git repo before making it a github repo -->
 
-	  <!-- <p class="SocialLink">What keeps superseding this class??</p> -->
-   <h1 class="SocialLink">I'm an h1</h1>
+  <div class="FullHero HeroHome">
+	  <h1 class="SocialLink">I'm an h1</h1>
     <ul>
       <li>
         <a href="https://example.com/" class="SocialLink">Link</a>
@@ -62,6 +82,8 @@ div {
         <a href="https://example.com/" class="SocialLink">Link</a>
       </li>
     </ul>
+  </div>
+
     <h2>I'm an h2</h2>
 
     <div class="BioWrapper">
